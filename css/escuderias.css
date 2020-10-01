@@ -1,0 +1,139 @@
+/*BASE DE TODAS LAS PAGINAS*/
+
+body, html{
+  font-family:'Baloo Tammudu 2';
+  margin: 0%;
+}
+
+body{
+  padding: 0%;
+  margin: 0%; 
+  background-color: #FFFFFF;
+}
+
+a{
+    color: #9F0202;
+}
+
+/*fondo de la cabecera */
+header:before {
+  background-image: url(../img/f1racers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  height: 55vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  content: "";
+  display: block;
+}
+
+/*estilo de la cabecera */
+header{
+  background-color: transparent;
+  font-size: 70px;
+  text-align: center;
+  letter-spacing: 7px;
+
+  color:#FF0000;
+  padding: 0%;
+  margin: 0%;
+  z-index: 2;
+}
+
+header h1{
+  margin: 0%;
+}
+
+nav{
+    box-sizing: border-box;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #BE1111;
+    padding-inline-start: 0%;
+}
+
+nav ul li{
+    float: left;
+    display: inline-block;
+    width: 20%;
+}
+
+nav ul li a{
+    display: block;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0px;
+    text-decoration: none;
+    background-color: #BE1111;
+}
+
+/*unificar colores de la pagina */
+section{
+  background-color: #FFFFFF;
+  margin: 0% 0%;
+  font-size: 17px;
+  padding: 25px;
+  text-align: justify;
+}
+
+footer{
+  padding: 25px;
+  margin: 0px;
+  background-color: #FF0000;
+  animation-name: footer1;
+  animation-duration: 4s;
+}
+
+@keyframes footer1{
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+footer a{
+  color: #000000
+}
+
+footer p{
+  text-align: center;
+  font-size: 25px;
+}
+
+/*ESPECIFICO DE ESTA PAGINA*/
+
+div.gallery {
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: 180px;
+}
+
+div.gallery{
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 180px;
+  height: 115px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+section {
+  background-color: #FFFFFF;
+}

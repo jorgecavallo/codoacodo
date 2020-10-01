@@ -1,0 +1,30 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+footer{
+  padding: 25px;
+  margin: 0px;
+  background-color: #FF0000;
+  animation-name: footer1;
+  animation-duration: 4s;
+}
+
+@keyframes footer1{
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+footer a{
+  color: #000000
+}
+
+footer p{
+  text-align: center;
+  font-size: 25px;
+}

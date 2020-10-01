@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <meta charset="UTF-8">
+  <meta name="description" content="Formula 1">
+  <meta name="keywords" content="Trabajo n°1, Trabajo Cavallo, TpO Integrador">
+  <meta name="author" content="Cavallo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Formula 1</title> 
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Intro</a>
+    <a href="historia.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Historia</a>
+    <a href="escuderias.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Escuderias</a>
+    <a href="corredores.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Corredores</a>
+    <a href="circuitos.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Circuitos</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Posiciones</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index.html">Intro</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="historia.html">Historia</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="escuderias.html">Escuderias</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="corredores.html">Corredores</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="circuitos.html">Circuitos</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="posiciones.html">Posiciones</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Resumen</h1>
+      <article>
+      <p>El Campeonato Mundial de <a href="https://www.formula1.com/" title="Pagina oficial F1" target="blank">Fórmula 1</a> de la <a href="https://www.fia.com/" title="Fia pagina oficial" target="blank"> Fia</a>, más conocida como Fórmula Uno, Fórmula 1 o F1, es la principal competición de automovilismo internacional y campeonato de deportes de motor más popular y prestigioso del mundo. La entidad que la dirige es la <a href="https://www.fia.com/" title="Fia pagina oficial" target="blank"> Federación Internacional del Automóvil (FIA)</a>. 
+      </article>
+  </section>
+  <footer>
+    <div>
+    <p>
+      <a href="form.html"> ¡Suscribite a nuestro newsletter!</a>
+    </p>
+    </div>
+  </footer>
+</div>
+
+<script>
+
+var mySidebar = document.getElementById("mySidebar");
+
+var overlayBg = document.getElementById("myOverlay");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
